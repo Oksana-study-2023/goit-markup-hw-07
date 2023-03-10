@@ -1,0 +1,211 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-navigation {
+    display: flex;
+  }
+
+  .site-navigation {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    position: relative;
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--dark-background-color);
+
+    transition: color 250ms var(--timing-function);
+  }
+
+  .site-navigation .header-link:hover,
+  .site-navigation .header-link:focus {
+    color: var(--primary-active-color);
+  }
+
+  .site-navigation .header-link.link.current {
+    color: var(--pressed-state-color);
+  }
+
+  .current::after {
+    content: '';
+
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+
+    background-color: var(--pressed-state-color);
+    border-radius: 2px;
+  }
+
+  .mail-link,
+  .tel-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--primary-text-color);
+
+    transition: color 250ms var(--timing-function);
+  }
+
+  .contacts .mail-link:hover,
+  .contacts .mail-link:focus,
+  .contacts .tel-link:hover,
+  .contacts .tel-link:focus {
+    color: var(--primary-active-color);
+  }
+
+  .contacts-navigation {
+    display: line;
+  }
+
+  .contacts-address {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .hero {
+    width: 768px;
+    height: 436px;
+    padding-bottom: 108px;
+
+    background-image: var(--lin-gradient),
+      url(../images/tablet-people-office.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/tablet-people-office-2x.jpg);
+    }
+  }
+
+  .hero .container {
+    max-width: 526px;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 40px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  .feature-item {
+    width: calc((100% - 24px) / 2);
+    margin-right: 24px;
+  }
+
+  .feature-item:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  .feature-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+
+  .section-team > .container {
+    width: 582px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    margin-right: 24px;
+    margin-bottom: 64px;
+  }
+
+  .team-item:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  .team-item:nth-last-child(-n + 2) {
+    margin-bottom: 8px;
+  }
+
+  .section-customers > .container {
+    width: 582px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .online-form {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    justify-content: left;
+  }
+
+  .online-input {
+    width: 264px;
+  }
+
+  .footer-logo-text {
+    margin-left: 108px;
+    margin-right: 24px;
+    text-align: left;
+  }
+
+  .footer-social {
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .footer-online-form {
+    text-align: left;
+    margin-left: 108px;
+  }
+
+  .modal {
+    width: 408px;
+  }
+}
