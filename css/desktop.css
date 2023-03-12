@@ -8,6 +8,13 @@
     gap: 40px;
   }
 
+  .mail-link,
+  .tel-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
   .header-container {
     display: flex;
     align-items: center;
@@ -28,7 +35,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/people-office-2x.jpg);
+      background-image: var(--lin-gradient), url(../images/people-office-2x.jpg);
     }
   }
 
@@ -104,6 +111,12 @@
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .feature-item h3 {
+    text-align: left;
+
+    color: var(--dark-background-color);
   }
 
   .team-item {

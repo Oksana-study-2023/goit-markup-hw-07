@@ -3,11 +3,6 @@
     width: 766px;
   }
 
-  .header-container {
-    display: flex;
-    align-items: center;
-  }
-
   .header-navigation {
     display: flex;
   }
@@ -62,8 +57,10 @@
   .tel-link {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -92,7 +89,7 @@
     margin-right: 76px;
   }
 
-  .menu-button {
+  .menu-button-open {
     display: none;
   }
 
@@ -114,7 +111,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/tablet-people-office-2x.jpg);
+      background-image: var(--lin-gradient),
+        url(../images/tablet-people-office-2x.jpg);
     }
   }
 
