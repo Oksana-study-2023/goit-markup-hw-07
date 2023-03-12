@@ -3,6 +3,11 @@
     width: 766px;
   }
 
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
   .header-navigation {
     display: flex;
   }
